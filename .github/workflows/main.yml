@@ -57,7 +57,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: compiled
-      - name: List current directory
-        run: ls -al
+          path: compiled/
+      - name: List current dir recursively
+        run: ls -Rl
       - name: Run benchmark
         run: python index.py
