@@ -1,7 +1,7 @@
 from kaitaistruct import KaitaiStream
 import random
 
-n_rows = 8192
+n_rows = 65536
 n_columns = 4
 column_types = [1, 2, 3, 4]
 

@@ -21,7 +21,7 @@ def progressbar(it, prefix="", size=60, file=sys.stdout):
     file.write("\n")
     file.flush()
 
-num_iterations = 256
+num_iterations = 64
 times = {}
 cases = ['test_cell', 'test_col_fixed']
 
@@ -45,7 +45,7 @@ for i in progressbar(range(num_iterations), "Running benchmark: ", 40):
             row_0 = [row_0_type.a, row_0_type.b, row_0_type.c, row_0_type.d]
 
     t1 = time.time()
-    assert len(k.table.table_rows) == 8192, 'len(k.table.table_rows) = {} must be {}'.format(len(k.table.table_rows), 4096)
+    assert len(k.table.table_rows) == 65536, 'len(k.table.table_rows) = {} must be {}'.format(len(k.table.table_rows), 65536)
     assert row_0 == [0x7a46, 0x86b97d9c, 0.842150092124939, 0.5340359913176319], 'row_0 = {} does not match'.format(row_0)
     times[choice].append((t1 - t0) * 1000)
 
