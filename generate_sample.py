@@ -22,7 +22,7 @@ assert len(column_types) == n_columns, 'len(column_types) = {} must be equal to 
 packer_f4le = struct.Struct('<f')
 packer_f8le = struct.Struct('<d')
 
-with open('./sample.bin', 'xb') as f:
+with open('./sample.bin', 'wb') as f:
     f.write(n_rows.to_bytes(4, endian))
     f.write(n_columns.to_bytes(1, endian))
     for t in column_types:
