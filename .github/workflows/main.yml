@@ -32,6 +32,14 @@ jobs:
         if: ${{ matrix.python-version == 2.7 || matrix.python-version == 'pypy2' }}
       - name: Install KS runtime library
         run: python -m pip install kaitaistruct
+      - name: Install Kaitai Struct compiler
+        run: |
+          sudo apt-get update
+          sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv 379CE192D401AB61
+          echo "deb https://dl.bintray.com/kaitai-io/debian jessie main" | sudo tee /etc/apt/sources.list.d/kaitai.list
+          sudo apt-get install kaitai-struct-compiler
+      - name: Compile .ksy files
+        run: kaitai-struct-compiler -- --verbose file -d compiled -t python *.ksy
       - name: Generate sample.bin
         run: python generate_sample.py
       - name: Run benchmark
