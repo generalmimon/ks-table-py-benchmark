@@ -44,7 +44,7 @@ with open('./sample.bin', 'xb') as f:
             if t == COL_U2:
                 f.write((random.randrange(0, 0xffff)).to_bytes(2, endian))
             elif t == COL_U4:
-                f.write((random.randrange(0, 0xffff_ffff)).to_bytes(4, endian))
+                f.write((random.randrange(0, 0xffffffff)).to_bytes(4, endian))
             elif t == COL_F4:
                 f.write(packer_f4le.pack(random.random()))
             elif t == COL_F8:
