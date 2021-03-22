@@ -50,3 +50,4 @@ with open('./sample.bin', 'wb') as f:
                 f.write(pk_f4le.pack(random.random()))
             elif t == COL_F8:
                 f.write(pk_f8le.pack(random.random()))
+    print('{} bytes written'.format(f.tell()))

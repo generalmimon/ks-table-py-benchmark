@@ -62,4 +62,4 @@ for name, numbers in times.items():
     print('FUNCTION: {} [Used {} times]'.format(name, len(numbers)))
     for stat in stats:
         print('\t{:6} {:=10.4f} ms'.format(stat[0], stat[1](numbers)))
-    print()
+    print('')
