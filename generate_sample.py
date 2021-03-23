@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Petr Pucil <petr.pucil@seznam.cz>
+#
+# SPDX-License-Identifier: MIT
+
 from kaitaistruct import KaitaiStream
 import random
 

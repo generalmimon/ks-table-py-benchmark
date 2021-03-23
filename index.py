@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Petr Pucil <petr.pucil@seznam.cz>
+#
+# SPDX-License-Identifier: MIT
+
 from kaitaistruct import KaitaiStream
 from compiled.test_cell import TestCell
 from compiled.test_col_fixed import TestColFixed
