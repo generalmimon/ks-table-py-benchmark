@@ -32,6 +32,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - name: Install KS runtime library
+        run: python -m pip install kaitaistruct
       - name: Generate sample.bin
         run: python generate_sample.py
       - name: Upload parsers as workflow artifacts
