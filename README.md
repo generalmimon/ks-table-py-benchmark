@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Petr Pucil <petr.pucil@seznam.cz>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # Kaitai Struct table format Python parsing benchmark
 
 See https://gitter.im/kaitai_struct/Lobby?at=6058ce092beb1e1da3c30cfa

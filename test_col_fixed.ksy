@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Petr Pucil <petr.pucil@seznam.cz>
+#
+# SPDX-License-Identifier: MIT
+
 meta:
   id: test_col_fixed
   license: MIT

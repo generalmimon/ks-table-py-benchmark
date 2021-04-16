@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Petr Pucil <petr.pucil@seznam.cz>
+#
+# SPDX-License-Identifier: CC0-1.0
+
 *
 !.gitignore
 !__init__.py
