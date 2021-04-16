@@ -31,3 +31,24 @@ Run the benchmark:
 ```shell
 python3 ./index.py
 ```
+
+## Maintenance
+
+### Licensing
+
+> **Note:** requires https://github.com/fsfe/reuse-tool/. If `reuse --version` is not working for you,
+> get the tool by following the steps on https://github.com/fsfe/reuse-tool#install.
+
+Check for license/copyright issues:
+
+```shell
+reuse lint
+```
+
+Add comment headers with copyright and licensing information:
+
+```shell
+shopt -s globstar
+reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="CC0-1.0" **/.gitignore README.md
+reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="MIT" --style=python **/*.py **/*.ksy .github/**/*.yml
+```
