@@ -6,7 +6,9 @@ SPDX-License-Identifier: CC0-1.0
 
 # Kaitai Struct table format Python parsing benchmark
 
-![REUSE compliant](https://github.com/github/docs/actions/workflows/reuse-lint.yml/badge.svg)
+[![REUSE compliant](https://github.com/generalmimon/ks-table-py-benchmark/actions/workflows/reuse-lint.yml/badge.svg)](
+  https://github.com/generalmimon/ks-table-py-benchmark/actions/workflows/reuse-lint.yml
+)
 
 See https://gitter.im/kaitai_struct/Lobby?at=6058ce092beb1e1da3c30cfa
 
