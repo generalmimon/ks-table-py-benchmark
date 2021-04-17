@@ -53,6 +53,6 @@ Add comment headers with copyright and licensing information:
 
 ```shell
 shopt -s globstar
-reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="CC0-1.0" **/.gitignore README.md
-reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="MIT" --style=python **/*.py **/*.ksy .github/**/*.yml
+reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="CC0-1.0" **/.gitignore README.md .github/workflows/reuse-lint.yml
+reuse addheader --copyright="Petr Pucil <petr.pucil@seznam.cz>" --license="MIT" --style=python **/*.py **/*.ksy .github/workflows/main.yml
 ```
